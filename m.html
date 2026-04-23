@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Job Apply Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+  body {
+    font-family: Arial;
+    padding: 15px;
+    background: #f4f4f4;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 15px;
+    background: #070101;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+
+<body>
+
+<h2>Job Apply Message Tool</h2>
+
+<label>Recruiter Name:</label><br>
+<input type="text" id="name" placeholder="Enter recruiter name"><br>
+
+<button onclick="loadWP()">WordPress</button>
+<button onclick="loadShopify()">Shopify</button>
+<button onclick="loadWeb()">Web Developer</button>
+<button onclick="loadFrontend()">Front-End (React)</button>
+<button onclick="loadUI()">UI Developer</button>
+<button onclick="loadReact()">React Developer</button>
+<button onclick="loadGeneral()">General Inquiry</button>
+<button onclick="openEmail()">Open Gmail</button>
+<button onclick="copyText()">Copy Message</button>
+
+<textarea id="emailText"></textarea>
+
+<script>
+function getName() {
+  var name = document.getElementById("name").value;
+  return name ? name : "Recruiter";
+}
+
+function loadWP() {
+  var name = getName();
+  document.getElementById("emailText").value = `Hi ${name},
+
+I came across your post regarding the WordPress Developer opening and would like to apply for the role.
+
+My name is Amol Prabhakar Raut, and I am a Web Developer with around 4 years of experience in WordPress (WP Bakery, Elementor, Divi), including theme customization, website troubleshooting, and performance optimization. I also have experience in Shopify theme customization and work with HTML, CSS, Bootstrap, JavaScript, and Git.
+
+In my current role, I handle multiple projects independently, ensuring timely delivery and quality. I am currently exploring new opportunities and would be glad to connect.
+
+Portfolio: https://amolraut474.github.io/Amol_Portfolio_website/
+Email: amolraut474@gmail.com | Phone: 9665158535
+
+Thanks & Regards,
+Amol Raut`;
+}
+
+function loadShopify() {
+  var name = getName();
+  document.getElementById("emailText").value = `Hi ${name},
+
+I came across your post regarding the Shopify Developer opening and would like to apply for the role.
+
+My name is Amol Prabhakar Raut, and I am a Web Developer with around 4 years of experience in Shopify theme customization, working with Liquid, creating custom sections, app integrations, and implementing responsive designs using HTML, CSS, Bootstrap, and JavaScript. I also have experience with WordPress (WP Bakery, Elementor, Divi) and Git.
+
+In my current role, I handle multiple projects independently, ensuring timely delivery and quality. I am currently exploring new opportunities and would be glad to connect.
+
+Portfolio: https://amolraut474.github.io/Amol_Portfolio_website/
+Email: amolraut474@gmail.com | Phone: 9665158535
+
+Thanks & Regards,
+Amol Raut`;
+}
+
+function loadWeb() {
+  var name = getName();
+  document.getElementById("emailText").value = `Hi ${name},
+
+I came across your post regarding the Web Developer opening and would like to apply for the role.
+
+My name is Amol Prabhakar Raut, and I am a Web Developer with around 4 years of experience in building and customizing responsive websites. I have hands-on experience in WordPress (WP Bakery, Elementor, Divi), Shopify theme customization, and frontend technologies like HTML, CSS, Bootstrap, JavaScript, and Git.
+
+In my current role, I handle multiple projects independently, ensuring timely delivery and quality. I am currently exploring new opportunities and would be glad to connect.
+
+Portfolio: https://amolraut474.github.io/Amol_Portfolio_website/
+Email: amolraut474@gmail.com | Phone: 9665158535
+
+Thanks & Regards,
+Amol Raut`;
+}
+
+function loadFrontend() {
+  var name = getName();
+  document.getElementById("emailText").value = `Hi ${name},
+
+I came across your post regarding the Front-End Developer opening and would like to apply for the role.
+
+My name is Amol Prabhakar Raut, and I am a Web Developer with around 4 years of experience in building responsive websites using HTML, CSS, Bootstrap, and JavaScript. I also have hands-on experience with WordPress (WP Bakery, Elementor, Divi) and basic knowledge of React for building modern UI components.
+
+In my current role, I handle multiple projects independently, ensuring timely delivery and quality. I am currently exploring opportunities to work on more frontend-focused roles and would be glad to connect.
+
+Portfolio: https://amolraut474.github.io/Amol_Portfolio_website/
+Email: amolraut474@gmail.com | Phone: 9665158535
+
+Thanks & Regards,
+Amol Raut`;
+}
+function loadUI() {
+  var name = getName();
+  document.getElementById("emailText").value = `Hi ${name},
+
+I came across your post regarding the UI Developer opening and would like to apply for the role.
+
+My name is Amol Prabhakar Raut, and I am a Web Developer with around 4 years of experience in designing and developing responsive user interfaces using HTML, CSS, Bootstrap, and JavaScript. I have hands-on experience in WordPress (WP Bakery, Elementor, Divi) and creating visually appealing, user-friendly layouts.
+
+I focus on building clean UI, responsive design, and improving user experience across devices. In my current role, I handle multiple projects independently, ensuring timely delivery and quality.
+
+I am currently exploring new opportunities and would be glad to connect.
+
+Portfolio: https://amolraut474.github.io/Amol_Portfolio_website/
+Email: amolraut474@gmail.com | Phone: 9665158535
+
+Thanks & Regards,  
+Amol Raut`;
+}
+function loadReact() {
+  var name = getName();
+  document.getElementById("emailText").value = `Hi ${name},
+
+I came across your post regarding the React Developer opening and would like to apply for the role.
+
+My name is Amol Prabhakar Raut, and I am a Web Developer with around 4 years of experience in building responsive websites using HTML, CSS, Bootstrap, and JavaScript. I also have working knowledge of React and have built basic UI components and layouts.
+
+Along with this, I have hands-on experience in WordPress (WP Bakery, Elementor, Divi) and Shopify theme customization.
+
+In my current role, I handle multiple projects independently, ensuring timely delivery and quality. I am currently exploring opportunities to grow in frontend and React-based roles and would be glad to connect.
+
+Portfolio: https://amolraut474.github.io/Amol_Portfolio_website/
+Email: amolraut474@gmail.com | Phone: 9665158535
+
+Thanks & Regards,
+Amol Raut`;
+}
+
+function loadGeneral() {
+  var name = getName();
+  document.getElementById("emailText").value = `Hi ${name},
+
+I hope you are doing well.
+
+My name is Amol Prabhakar Raut, and I am a Web Developer with around 4 years of experience in building and customizing responsive websites. I have hands-on experience in WordPress (WP Bakery, Elementor, Divi), Shopify theme customization (Liquid), and frontend technologies like HTML, CSS, Bootstrap, JavaScript, and Git.
+
+I am currently exploring new opportunities and would be interested in any suitable roles related to Web Development, WordPress, Shopify, or Front-End Development.
+
+I would really appreciate it if you could consider my profile or let me know about any relevant openings.
+
+Portfolio: https://amolraut474.github.io/Amol_Portfolio_website/
+Email: amolraut474@gmail.com | Phone: 9665158535
+
+Thanks & Regards,
+Amol Raut`;
+}
+
+function openEmail() {
+  var subject = "Application for Web Developer Role";
+  var body = document.getElementById("emailText").value;
+
+  var mailtoLink = "mailto:?" + 
+                   "subject=" + encodeURIComponent(subject) + 
+                   "&body=" + encodeURIComponent(body);
+
+  window.location.href = mailtoLink;
+}
+
+
+function copyText() {
+  var text = document.getElementById("emailText");
+  text.select();
+  document.execCommand("copy");
+  alert("Copied!");
+}
+
+// Default load
+loadWP();
+
+
+</script>
+
+</body>
+</html>
